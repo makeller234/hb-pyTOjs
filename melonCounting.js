@@ -1,4 +1,6 @@
-melons_to_add = ['Ogen', 'Horned Melon', 'Watermelon', 'Casaba',
+'use strict';
+
+const melonsToAdd = ['Ogen', 'Horned Melon', 'Watermelon', 'Casaba',
                  'Sharlyn', 'Xigua', 'Ogen', 'Christmas', 'Christmas',
                  'Christmas', 'Christmas', 'Watermelon', 'Sharlyn', 'Xigua',
                  'Cantaloupe', 'Christmas', 'Watermelon', 'Christmas',
@@ -10,16 +12,16 @@ melons_to_add = ['Ogen', 'Horned Melon', 'Watermelon', 'Casaba',
                  'Watermelon', 'Cantaloupe', 'Casaba', 'Cantaloupe', 'Casaba',
                  'Watermelon', 'Santa Claus', 'Casaba']
 
-const count_melons = melon_list => {
-    const melon_counts = {};
+const count_melons = melonList => {
+    const melonCounts = {};
 
-    for (const melon of melon_list){
-        if (!melon_counts.hasOwnProperty(melon)){
-            melon_counts[melon] = 1;
+    for (const melon of melonList){
+        if (!melonCounts.hasOwnProperty(melon)){
+            melonCounts[melon] = 1;
         }
         else{
-            melon_counts[melon] = melon_counts[melon] + 1;
+            melonCounts[melon] = melonCounts[melon] + 1;
         }
     }
-    return melon_counts;
+    return melonCounts;
 }
