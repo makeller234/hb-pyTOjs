@@ -12,7 +12,7 @@ const melonsToAdd = ['Ogen', 'Horned Melon', 'Watermelon', 'Casaba',
                  'Watermelon', 'Cantaloupe', 'Casaba', 'Cantaloupe', 'Casaba',
                  'Watermelon', 'Santa Claus', 'Casaba']
 
-const count_melons = melonList => {
+const countMelons = melonList => {
     const melonCounts = {};
 
     for (const melon of melonList){
@@ -24,4 +24,17 @@ const count_melons = melonList => {
         }
     }
     return melonCounts;
-}
+};
+
+
+// Solution from HW
+// const melonCounts = melonsToAdd.reduce((mCounts, melon) => {
+//     console.log(`mCounts: ${mCounts[melon]}`);
+//     console.log(`melon: ${melon}`);
+//     mCounts[melon] = (mCounts[melon] || 0) + 1;
+//     console.log(`non-final mCounts: ${mCounts[melon]}`)
+  
+//     return mCounts;
+//   }, {});
+  
+  //console.log(melonCounts);
